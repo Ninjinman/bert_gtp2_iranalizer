@@ -51,7 +51,7 @@ def main():
     gpt_tokenizer = GPT2Tokenizer.from_pretrained("EleutherAI/gpt-neo-1.3B")
     gpt_model = GPTNeoForCausalLM.from_pretrained("EleutherAI/gpt-neo-1.3B")
 
-    generated_answer = generate_answer(gpt_model, gpt_tokenizer, translated_input_text, max_length=150)
+    generated_answer = generate_answer(gpt_model, gpt_tokenizer, translated_input_text, max_length=500)
     print(f"Generated answer: {generated_answer}")
 
 if __name__ == "__main__":
